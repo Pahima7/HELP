@@ -35,7 +35,7 @@ public class Hebrew extends Activity implements OnClickListener,
 
 	private void init() {
 		question = (TextView) findViewById(R.id.tvQues);
-		quesNum = 0;
+		quesNum = 1;
 		nextQ = (ImageButton) findViewById(R.id.imageButton1);
 		prevQ = (ImageButton) findViewById(R.id.imageButton2);
 		selectionList = (RadioGroup) findViewById(R.id.rgAnswers);
@@ -47,20 +47,20 @@ public class Hebrew extends Activity implements OnClickListener,
 		answers[1] = (RadioButton) findViewById(R.id.rAns1);
 		answers[2] = (RadioButton) findViewById(R.id.rAns2);
 		answers[3] = (RadioButton) findViewById(R.id.rAns3);
-		question.setText("щамд 1");
-		answers[0].setText("ъщебд 1");
-		answers[1].setText("ъщебд 2");
-		answers[2].setText("ъщебд 3");
-		answers[3].setText("ъщебд 4");
+		question.setText("пїЅпїЅпїЅпїЅ 1");
+		answers[0].setText("пїЅпїЅпїЅпїЅпїЅ 1");
+		answers[1].setText("пїЅпїЅпїЅпїЅпїЅ 2");
+		answers[2].setText("пїЅпїЅпїЅпїЅпїЅ 3");
+		answers[3].setText("пїЅпїЅпїЅпїЅпїЅ 4");
 		time = (Chronometer) findViewById(R.id.chronometer1);
 		time.start();
-		String[] arr = { "     ъщебд 1", "     ъщебд 2", "     ъщебд 3", "     ъщебд 4" };
+		String[] arr = { "     пїЅпїЅпїЅпїЅпїЅ 1", "     пїЅпїЅпїЅпїЅпїЅ 2", "     пїЅпїЅпїЅпїЅпїЅ 3", "     пїЅпїЅпїЅпїЅпїЅ 4" };
 		questions = new Question[5];
-		questions[0] = new Question(2, "щамд 1", arr);
-		questions[1] = new Question(2, "щамд 2", arr);
-		questions[2] = new Question(2, "щамд 3", arr);
-		questions[3] = new Question(2, "щамд 4", arr);
-		questions[4] = new Question(2, "щамд 5", arr);
+		questions[0] = new Question(2, "пїЅпїЅпїЅпїЅ 1", arr);
+		questions[1] = new Question(2, "пїЅпїЅпїЅпїЅ 2", arr);
+		questions[2] = new Question(2, "пїЅпїЅпїЅпїЅ 3", arr);
+		questions[3] = new Question(2, "пїЅпїЅпїЅпїЅ 4", arr);
+		questions[4] = new Question(2, "пїЅпїЅпїЅпїЅ 5", arr);
 
 	}
 
